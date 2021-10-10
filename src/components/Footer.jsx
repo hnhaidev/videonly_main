@@ -53,7 +53,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <div className="footer__contents__left">
-                <div className="footer__contents__left__link headingAnimation">
+                <div className="footer__contents__left__link">
                   {footerAboutLinks.map((val, idx) => {
                     return (
                       <Link
@@ -80,7 +80,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-sm-12 col-md-6">
-              <div className="footer__contents__right animation">
+              <div className="footer__contents__right">
                 {footerCustomLinks.map((val, idx) => {
                   return (
                     <a
@@ -95,7 +95,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer__contents__left__copyright animation">
+          <div className="footer__contents__left__copyright">
             <p className="footer__contents__left__copyright__p">
               Copyright© VIDIONLY All rights reserved.
             </p>
