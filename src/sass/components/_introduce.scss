@@ -1,0 +1,65 @@
+.introduce {
+  width: 100%;
+  background-color: $main1;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  @include responsive(md) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  @include responsive(sm) {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  @include responsive(xs) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__contents {
+    &__image {
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+      &__title {
+        font-weight: 600;
+        color: $text-color2;
+        text-transform: uppercase;
+      }
+
+      &__heading {
+        font-size: 35px;
+        color: $text-color3;
+        padding-top: 10px;
+        @include responsive(md) {
+          padding-top: 5px;
+        }
+      }
+
+      &__paragraph {
+        padding-top: 30px;
+        font-weight: 300;
+        color: $text-color3;
+        @include responsive(md) {
+          padding-top: 15px;
+        }
+      }
+
+      &__link {
+        padding-top: 75px;
+        @include responsive(md) {
+          padding-top: 50px;
+        }
+      }
+    }
+  }
+}

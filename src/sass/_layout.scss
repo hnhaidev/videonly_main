@@ -1,0 +1,75 @@
+@import "./variables";
+
+@mixin xs {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$gutter/2;
+  div[class^="col-"] {
+    padding: $gutter/2;
+  }
+  @include xs {
+    @for $i from 1 through $col {
+      .col-xs-#{$i} {
+        width: (100% / $col) * $i;
+      }
+    }
+  }
+  @include sm {
+    @for $i from 1 through $col {
+      .col-sm-#{$i} {
+        width: (100% / $col) * $i;
+      }
+    }
+  }
+  @include md {
+    @for $i from 1 through $col {
+      .col-md-#{$i} {
+        width: (100% / $col) * $i;
+      }
+    }
+  }
+  @include lg {
+    @for $i from 1 through $col {
+      .col-lg-#{$i} {
+        width: (100% / $col) * $i;
+      }
+    }
+  }
+  @include xl {
+    @for $i from 1 through $col {
+      .col-xl-#{$i} {
+        width: (100% / $col) * $i;
+      }
+    }
+  }
+}

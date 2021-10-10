@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: $main1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: $main2 0px 0px 5px inset;
+  border-radius: 10px;
+}
+
+html {
+  font-size: 13px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "NotoSansCJKkr";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "NotoSansCJKkr";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  max-width: 100%;
+  image-rendering: pixelated;
+}
+
+.heading {
+  font-size: 35px;
+  @include responsive(md) {
+    font-size: 26px;
+  }
+  @include responsive(sm) {
+    font-size: 24px;
+  }
+}
+
+.textp {
+  font-size: 20px;
+  @include responsive(md) {
+    font-size: 16px;
+  }
+  @include responsive(sm) {
+    font-size: 14px;
+  }
+}
+
+.subTitle {
+  font-size: 16px;
+  @include responsive(md) {
+    font-size: 12px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @include responsive(lg) {
+    max-width: 100%;
+    padding: 0 5rem;
+  }
+
+  @include responsive(md) {
+    max-width: 100%;
+    padding: 0 4rem;
+  }
+
+  @include responsive(sm) {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  @include responsive(sx) {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.btn {
+  transition: all 0.25s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.pr {
+  position: relative;
+}
+
+.btn-default {
+  @include button($main1, $white, 80px, 32px, 12px, 6px);
+  @include responsive(md) {
+    @include button($main1, $white, 65px, 26px, 8px, 3px);
+  }
+}
+
+.btn-login {
+  @include button(unset, $white, 80px, 32px, 12px, 6px);
+  border: 1px solid $white;
+  transition: all 0.25s;
+  @include responsive(md) {
+    @include button(unset, $white, 65px, 26px, 8px, 3px);
+    border: 1px solid $white;
+  }
+}
+
+.btn-login:hover {
+  background-color: $main1;
+  border-color: $main1;
+  color: $white;
+  transform: translateY(-3px);
+}
+
+.button_box {
+  @include button($main1, $white, 200px, 52px, 18px, 10px);
+  @include responsive(md) {
+    @include button($main1, $white, 180px, 45px, 16px, 6px);
+  }
+}
+
+.button_longbanner {
+  @include button($white, $black, 200px, 52px, 18px, 10px);
+  @include responsive(md) {
+    @include button($white, $black, 180px, 45px, 16px, 6px);
+  }
+}
+
+.btn-more {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 2.08;
+  color: $text-color2;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  text-transform: uppercase;
+  @include responsive(md) {
+    font-size: 8px;
+  }
+}
+
+.bg-black {
+  background-color: $text-color2 !important;
+  color: $white !important;
+}
+
+.animation {
+  transform: translateY(-10rem) scale(0);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.animate {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.headingAnimation {
+  transform: translateY(-8rem) scale(0);
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+
+.headingAnimate {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}

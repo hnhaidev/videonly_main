@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: url("NotoSansCJKkr-Regular.eot");
+  src: url("NotoSansCJKkr-Regular.eot") format("embedded-opentype"),
+    url("NotoSansCJKkr-Regular.woff") format("woff"),
+    url("NotoSansCJKkr-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* @font-face {
+  font-family: "NotoSansCJKkr";
+  src: url("NotoSansCJKkr-Medium.eot");
+  src: url("NotoSansCJKkr-Medium.eot") format("embedded-opentype"),
+    url("NotoSansCJKkr-Medium.woff") format("woff"),
+    url("NotoSansCJKkr-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+} */
